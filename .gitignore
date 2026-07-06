@@ -1,0 +1,56 @@
+﻿# Dependencies
+node_modules/
+venv/
+.venv/
+env/
+
+# Build/cache
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.cache/
+.next/
+.dart_tool/
+.gradle/
+build/
+dist/
+out/
+target/
+
+# Generated/private data
+exam_submissions/
+submissions/
+uploads/
+public/uploads/
+users.json
+online-users.json
+session_state.json
+exam-sessions.json
+*.sqlite
+*.db
+*.env
+.env
+.env.*
+*.log
+SECRET_SCAN.txt
+
+# ML/data artifacts
+runs/
+models/
+exports/
+catboost_info/
+*.pt
+*.pth
+*.onnx
+*.npy
+*.npz
+*.pkl
+*.joblib
+
+# OS/editor
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
