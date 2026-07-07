@@ -1,63 +1,70 @@
-# Fast Lazy Bee
+﻿# fast-lazy-bee-sanitized
 
-[![CI](https://github.com/cowuake/fast-lazy-bee/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/cowuake/fast-lazy-bee/actions/workflows/ci.yml)
-[![Coverage Status](https://coveralls.io/repos/github/cowuake/fast-lazy-bee/badge.svg?branch=main)](https://coveralls.io/github/cowuake/fast-lazy-bee?branch=main)
+Sanitized project snapshot imported from a local OneDrive development archive.
 
-Fast Lazy Bee is a toy *RESTful API* developed in TypeScript with the [Fastify](https://fastify.dev/) framework for educational purposes.
+## Status
 
-## How to run locally
+This repository was prepared from a private buffer import and documented before publicization.
 
-### Requirements
+## Overview
 
-| Tool                          | Version        |
-| ----------------------------- | -------------- |
-| Node.js[^Node]                | 21.7.3         |
-| MongoDB[^Mongo]               | 8.x            |
-| mongodb-database-tools[^Tools]| (a recent one) |
+This project appears to be a software, teaching-tool, coursework, experiment, prototype, or research-support repository from an archived development workspace.
 
-[^Node]: Use [fnm](https://github.com/Schniz/fnm) or [nvm](https://github.com/nvm-sh/nvm) for installing the required version.
+For a fuller overview, see [docs/overview.md](docs/overview.md).
 
-[^Mongo]: Install MongoDB Community Edition for your platform. See [MongoDB installation docs](https://www.mongodb.com/docs/manual/installation/).
+## Repository structure
 
-[^Tools]: Required for `mongorestore`. See [mongodb-database-tools](https://www.mongodb.com/docs/database-tools/installation/installation/).
+Important top-level files and folders:
 
-### Quick start
+- .github
+- src
+- .gitignore
+- .prettierrc.json
+- babel.config.js
+- Dockerfile
+- eslint.config.mjs
+- health-routes.ts
+- jest.config.ts
+- LICENSE
+- MIGRATION.md
+- mongodb.ts
+- package-lock.json
+- package.json
+- README.md
+- run.ps1
+- run.sh
+- server-options.ts
+- tsconfig.json
 
-Make sure MongoDB is running locally on the default port (27017), then:
+See [docs/structure.md](docs/structure.md).
 
-#### GNU/Linux and macOS
+## Setup
 
-Give the run script execution permission with `chmod +x ./run.sh`, then launch it with
+See [docs/setup.md](docs/setup.md).
 
-```bash
-./run.sh
-```
+## Usage
 
-The script will download and restore the MongoDB sample dataset, build the app, and start it.
-Once running, access the API via SwaggerUI at [http://localhost:3000/docs](http://localhost:3000/docs).
+See [docs/usage.md](docs/usage.md).
 
-#### Windows
+## Documentation
 
-Launch the run script with:
+- [docs/overview.md](docs/overview.md)
+- [docs/setup.md](docs/setup.md)
+- [docs/usage.md](docs/usage.md)
+- [docs/structure.md](docs/structure.md)
+- [docs/security-and-data.md](docs/security-and-data.md)
+- [docs/roadmap.md](docs/roadmap.md)
 
-```powershell
-.\run.ps1
-```
+## Data and privacy
 
-### Development mode
+This repository was imported from a sanitized local archive. It should not contain private data, student submissions, credentials, local databases, generated dependency folders, or build outputs.
 
-Install dependencies with `npm ci`, then run:
+See [docs/security-and-data.md](docs/security-and-data.md).
 
-```shell
-npm run dev
-```
+## Migration note
 
-This starts the app with `tsx watch` for hot reloading. In development mode, the app connects to your local MongoDB instance using the connection string from `.env`.
+If present, [MIGRATION.md](MIGRATION.md) records the original local source path and buffer-import status.
 
-### Running tests
+## License
 
-Tests use [mongodb-memory-server](https://github.com/typegoose/mongodb-memory-server) to spin up an ephemeral MongoDB instance automatically — no external database required.
-
-```shell
-npm test
-```
+Check the repository license file if present. If no license is present, reuse is not explicitly granted until a license is added.
